@@ -1,4 +1,9 @@
+"use client"
 import './globals.css'
+import '@ionic/react/css/core.css';
+import '@ionic/react/css/normalize.css';
+
+import Navbar from './navbar/page.js'
 
 export const metadata = {
   title: 'Create Next App',
@@ -6,9 +11,16 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+
+  
   return (
-    <html lang="en">
-      <body>{children}</body>
+    
+    <html suppressHydrationWarning={true}  lang="en">
+      <body suppressHydrationWarning={true} >
+        <Navbar/>
+        {children}
+        </body>
     </html>
   )
 }

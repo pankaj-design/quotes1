@@ -1,102 +1,100 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import React from 'react'
+import Link from 'next/link'
+import Hero1 from "./hero1/page.js"
 
-const inter = Inter({ subsets: ['latin'] })
+const page = () => {
 
-export default function Home() {
+  const cardDetails = [
+    {
+      Name: "Aristotal",
+      linkURL : "/components/part1",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "lao otso",
+      linkURL : "/phillcards",
+      image: "/LaoTzo.jpg"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "/vivekananda.jpg"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/components/part1",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "lao otso",
+      linkURL : "/phillcards",
+      image: "/LaoTzo.jpg"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "/vivekananda.jpg"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/components/part1",
+      image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
+    },
+    {
+      Name: "lao otso",
+      linkURL : "/phillcards",
+      image: "/LaoTzo.jpg"
+    },
+    {
+      Name: "Aristotal",
+      linkURL : "/phillcards",
+      image: "/vivekananda.jpg"
+    },
+  ]
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    
+    <>
+    <Hero1 />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <section className='main-card-section'>
+      {cardDetails.map(({Name, linkURL, image}) =>(
+         <section className='card-section'>
+         <div className=' card-container'>
+          <img className='card-image' src={image}/>
+         <h2 className='card-text'>{Name}</h2>
+         <div>
+          <ul className='card-lines'>
+              <li><h4> <span>Country-</span> India</h4></li>
+              <li><h4> <span>Born-</span> 18/4/1860</h4></li>
+              <li><h4> <span>Famous books-</span> India brege, bdbcbckn,wuyu</h4></li>       
+          </ul>
+          <div className='card-buttons'>
+            <h5>  <Link className='card-btn1' href={linkURL}> Learn More</Link> </h5>
+            <h5> <Link className='card-btn1' href="/">  Quotes</Link></h5>
+          </div>
+         </div>
+         </div>
+         </section>
+      ))};
+   
+   </section>
+    </>
   )
 }
+
+export default page
