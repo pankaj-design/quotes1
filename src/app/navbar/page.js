@@ -2,8 +2,7 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-// import { IonIcon } from '@ionic/react';
-// import { menu, close} from 'ionicons/icons';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -46,12 +45,6 @@ const removenav = () =>{
           <li> <Link className='main-nav-link' onClick={removenav} href="/phillcards">home4</Link></li>
         </ul>
       </nav>
-
-
-     {/* <button className='btn-mobile-nav'>
-      <IonIcon  className='icon-mobile-nav menu-outline' icon={menu}/> 
-      <IonIcon className='icon-mobile-nav close-outline' icon={close} />
-      </button>  */}
 
 <button className='btn-mobile-nav'>
     <FontAwesomeIcon className='icon-mobile-nav menu-outline' icon={faBars} />
