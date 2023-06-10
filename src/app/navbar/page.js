@@ -2,8 +2,12 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { IonIcon } from '@ionic/react';
-import { menu, close} from 'ionicons/icons';
+// import { IonIcon } from '@ionic/react';
+// import { menu, close} from 'ionicons/icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const page = () => {
@@ -44,9 +48,15 @@ const removenav = () =>{
       </nav>
 
 
-     <button className='btn-mobile-nav'>
+     {/* <button className='btn-mobile-nav'>
       <IonIcon  className='icon-mobile-nav menu-outline' icon={menu}/> 
       <IonIcon className='icon-mobile-nav close-outline' icon={close} />
+      </button>  */}
+
+<button className='btn-mobile-nav'>
+    <FontAwesomeIcon className='icon-mobile-nav menu-outline' icon={faBars} />
+    <FontAwesomeIcon  className='icon-mobile-nav close-outline' icon={faXmark} />
+
       </button> 
 
 
