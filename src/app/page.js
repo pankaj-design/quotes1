@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Hero1 from "./hero1/page.js"
+import Hero1 from "./Hero1/page.js"
 
 const page = () => {
 
@@ -12,17 +12,17 @@ const page = () => {
     },
     {
       Name: "lao otso",
-      linkURL : "/phillcards",
+      linkURL : "/Phillcards",
       image: "/LaoTzo.jpg"
     },
     {
       Name: "Aristotal",
-      linkURL : "/phillcards",
+      linkURL : "/Phillcards",
       image: "/vivekananda.jpg"
     },
     {
       Name: "Aristotal",
-      linkURL : "/phillcards",
+      linkURL : "/Phillcards",
       image: "https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'"
     },
     {

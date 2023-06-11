@@ -39,18 +39,18 @@ const removenav = () =>{
 
       <nav className='main-nav '>
         <ul className='main-nav-list'>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/featured">Featured</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/hero1">home2</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/documents">home3</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/phillcards">home4</Link></li>
+          <li> <Link className='main-nav-link' onClick={removenav} href="/Neatured">Featured</Link></li>
+          <li> <Link className='main-nav-link' onClick={removenav} href="/Hero1">home2</Link></li>
+          <li> <Link className='main-nav-link' onClick={removenav} href="/Documents">home3</Link></li>
+          <li> <Link className='main-nav-link' onClick={removenav} href="/Phillcards">home4</Link></li>
         </ul>
       </nav>
-
+{/* 
 <button className='btn-mobile-nav'>
     <FontAwesomeIcon className='icon-mobile-nav menu-outline' icon={faBars} />
     <FontAwesomeIcon  className='icon-mobile-nav close-outline' icon={faXmark} />
 
-      </button> 
+      </button>  */}
 
 
    

@@ -3,7 +3,7 @@ import './globals.css'
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
 
-import Navbar from './navbar/page.js'
+import Navbar from './Navbar/page.js'
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   
   return (
     
-    <html suppressHydrationWarning={true}  lang="en">
+    <html  suppressHydrationWarning={true}  lang="en">
       <body suppressHydrationWarning={true} >
         <Navbar/>
         {children}

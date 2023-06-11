@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
-import Featured from "../featured/page.js"
+import Featured from "../Featured/page.js"
 import About from "../about/page.js"
-import Phillcards from "../phillcards/page.js"
+import Phillcards from "../Phillcards/page.js"
 
 
 const page = () => {
