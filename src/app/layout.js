@@ -3,7 +3,7 @@ import './globals.css'
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
 
-import Navbar from './Navbar/page.js'
+import Navbar from './navbar/page.js'
 
 export const metadata = {
   title: 'Create Next App',

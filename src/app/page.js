@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Hero1 from "./Hero1/page.js"
+import Hero1 from "./hero1/page.js"
 
 const page = () => {
 
