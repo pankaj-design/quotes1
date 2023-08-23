@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   
   return (
     
-    <html  suppressHydrationWarning={true}  lang="en">
+    <html  lang="en">
       <body suppressHydrationWarning={true} >
         <Navbar/>
         {children}

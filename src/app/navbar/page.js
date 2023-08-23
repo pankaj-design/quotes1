@@ -10,8 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const page = () => {
-  // const btnNav = document.querySelector(".btn-mobile-nav");
-  // const headClass = document.querySelector(".header");
 
 useEffect(() => {
 
@@ -39,18 +37,18 @@ const removenav = () =>{
 
       <nav className='main-nav '>
         <ul className='main-nav-list'>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/Neatured">Featured</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/Hero1">home2</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/Documents">home3</Link></li>
-          <li> <Link className='main-nav-link' onClick={removenav} href="/Phillcards">home4</Link></li>
+          <li> <Link className='main-nav-link'  href="/featured">Featured</Link></li>
+          <li> <Link className='main-nav-link'  href="/hero1">home2</Link></li>
+          <li> <Link className='main-nav-link'  href="/documents">home3</Link></li>
+          <li> <Link className='main-nav-link'  href="/phillcards">home4</Link></li>
         </ul>
       </nav>
-{/* 
+
 <button className='btn-mobile-nav'>
     <FontAwesomeIcon className='icon-mobile-nav menu-outline' icon={faBars} />
     <FontAwesomeIcon  className='icon-mobile-nav close-outline' icon={faXmark} />
 
-      </button>  */}
+      </button> 
 
 
    
@@ -58,5 +56,6 @@ const removenav = () =>{
     </>
   )
 }
-
 export default page
+
+// onClick={removenav}
