@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const page = () => {
   return (
     <>
     <section className='card-section'>
    <div className=' card-container'>
-    <img className='card-image'  src='https://images.unsplash.com/photo-1529485726363-95c8d62f656f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80' alt='cardimage1'/>
+    <Image className='card-image'  src='/vivekananda.jpg' width= {300} height= {200}  placeholder="blur"
+  blurDataURL={'/vivekananda.jpg'} alt='cardimage1'/>
    <h2 className='card-text'>Vivekanand</h2>
    <div>
     <ul className='card-lines'>
